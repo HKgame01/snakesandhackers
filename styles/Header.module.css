@@ -1,0 +1,24 @@
+
+.nav{
+	background-color: #0059E3;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	position: sticky;
+	/* width: 100vw; */
+}
+
+.logo img {
+	height: 100px;
+	margin-left: 20px;
+	margin-top: -20px;
+}
+
+.menu-items {
+	padding: 20px;
+}
+
+.menu-items > a:hover {
+	text-decoration: underline;
+}
