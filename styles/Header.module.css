@@ -9,14 +9,31 @@
 	/* width: 100vw; */
 }
 
-.logo img {
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.logo a {
+  font-size: 20px;
+  font-weight: bold;
+  color: tomato;
+}
+
+/* .logo img {
 	height: 100px;
 	margin-left: 20px;
 	margin-top: -20px;
-}
+} */
 
 .menu-items {
 	padding: 20px;
+  display: flex;
+}
+
+.menu-items > a {
+  padding: 0 20px;
 }
 
 .menu-items > a:hover {

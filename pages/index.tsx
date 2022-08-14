@@ -7,8 +7,8 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Play</title>
-        <meta name="description" content="Snake and Ladder" />
+        <title>To the old Ways</title>
+        <meta name="description" content="To the old ways" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
             Ladders will take you up but Snakes will take you down! Are you afraid of serpents?
             No problem! This game is two versions in one — just choose your game mode.
             You can play against a computer, or two players can
-            compete against each other. <a href="#">Play now</a>
+            compete against each other. <a target="_blank" rel="noopener noreferrer" href="https://t.me/snakeandhackers_bot">Play now</a>
           </p>
         </div>
         <div className="section-right">
