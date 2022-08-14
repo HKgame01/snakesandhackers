@@ -10,7 +10,7 @@ export default function Header({ }) {
         </a>
       </div>
       <div className={styles['menu-items']}>
-        <a rel="noopener noreferrer" target="_blank" href="https://t.me/snakeandhackers_bot">Snakes & Ladder</a>
+        <a rel="noopener noreferrer" target="_blank" href="https://t.me/snakeandhackers_bot">Gamer Bot</a>
         <a rel="noopener noreferrer" target="_blank" href="https://t.me/gamingarena3_bot">Gaming Arena</a>
       </div>
     </nav>
