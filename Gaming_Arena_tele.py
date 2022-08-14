@@ -1,13 +1,13 @@
 import cohere
 import telebot
 
-API_KEY = "5328666176:AAHwVXAevVBWdHzdvOYYn4wZSb5Exc6U1bU"
+API_KEY = "{telegram token}"
 
 bot = telebot.TeleBot(API_KEY)
 print("Bot is running!")
 @bot.message_handler(commands=['start'])
 def greet(message):
-  bot.send_message(message.chat.id, "Hello, Welcome to the Birthday Helper Bot.Please write /help to see the commands available.")
+  bot.send_message(message.chat.id, "Hello, Welcome to the Game Arena Bot.Please write /help to see the commands available.")
 
 @bot.message_handler(commands=['help'])
 def hello(message):
@@ -22,7 +22,7 @@ def hello(message):
 
 @bot.message_handler(commands=['about'])
 def greet(message):
-  bot.send_message(message.chat.id, "This bot is made by Hardik and Henok for Snakes and Hackers 2")
+  bot.send_message(message.chat.id, "This bot is made for Snakes and Hackers 2")
 
 def game_request(message):
   request = message.text.split()
@@ -34,7 +34,7 @@ def game_request(message):
 @bot.message_handler(func=game_request)
 def send_price(message):
 	g = message.text.split()[1]
-	co = cohere.Client('zgwXd870rQz3cVQyzJqRcQITzKsIR8lx873qlmsZ')
+	co = cohere.Client('{cohere api key}')
 
 	response = co.generate(
 		model='xlarge',
