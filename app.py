@@ -6,7 +6,7 @@ app = Flask(name)
 def home_page(): 
 
 g=input("Enter game name: ")
-co = cohere.Client('zgwXd870rQz3cVQyzJqRcQITzKsIR8lx873qlmsZ')
+co = cohere.Client('{api}')
 
 response = co.generate(
   model='xlarge',
